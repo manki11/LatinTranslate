@@ -41,7 +41,8 @@
 <div style="text-align: center">
     <h2>Pig Latin Translator</h2>
 
-    <form>
+    <form action="{% url 'translate' %}" method="post">
+        {% csrf_token %}
         <input class="textdef" type="text" name="text" id="text" placeholder="Enter text to translate">
         <br/>
         <button class="textdef" id="submit" type="Submit">Translate</button>
