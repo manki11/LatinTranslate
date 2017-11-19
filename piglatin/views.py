@@ -18,4 +18,4 @@ def translate(request):
             translation+='ay '
 
 
-    return render(request, 'translate.html')
+    return render(request, 'translate.html',{'originalText': originalText, 'translatedText': translation})

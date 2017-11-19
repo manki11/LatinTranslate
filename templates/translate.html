@@ -16,6 +16,18 @@
             width: 600px;
         }
 
+        a{
+            background-color: dodgerblue;
+            color: white;
+            font-weight: 200;
+            font-family: sans-serif;
+            border: solid 1px transparent;
+            border-radius: 5px;
+            padding: 10px;
+            width: 200px;
+            text-decoration: none;
+        }
+
         h2 {
             color: #777777;
             font-family: sans-serif;
@@ -40,20 +52,20 @@
     <h2>Pig Latin Translator</h2>
 
     <div>
-        <p>Original Text:</p>
+        <p>Original Text: {{ originalText }}</p>
     </div>
 
     <div class="divider"></div>
 
     <div>
-        <p>Translated Text:</p>
+        <p>Translated Text: {{ translatedText }}</p>
     </div>
 
     <div class="divider"></div>
 
 
-    <div>
-        <a></a>
+    <div style="margin-top: 30px;text-align: center">
+        <a href="{% url 'home' %}">Translate Again!?</a>
     </div>
 
 
